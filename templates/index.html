@@ -30,9 +30,17 @@
           </button>
           <h5 class="text-dark h4">Daniel Kentaro Smith</h5>
           <div class="col-md-8"></div>
-          <img width="32" height="32" src = {% static "homepage/svgs/brands/python.svg"%}>
-          <img width="32" height="32" src = {% static "homepage/svgs/brands/js.svg"%}>
-          <img width="32" height="32" src = {% static "homepage/svgs/brands/react.svg"%}>
+          <div id="icons" class="carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+            <img class = "carousel-item active" width="32" height="32" src = {% static "homepage/svgs/brands/python.svg"%} >
+            <img class = "carousel-item" width="32" height="32" src = {% static "homepage/svgs/brands/js.svg"%} >
+            <img class = "carousel-item" width="32" height="32" src = {% static "homepage/svgs/brands/react.svg"%} >
+            <img class = "carousel-item" width="32" height="32" src = {% static "homepage/svgs/brands/node.svg"%} >
+            <img class = "carousel-item" width="32" height="32" src = {% static "homepage/svgs/brands/git-alt.svg"%} >
+            <img class = "carousel-item" width="32" height="32" src = {% static "homepage/svgs/brands/mongodb.svg"%} >
+            <img class = "carousel-item" width="32" height="32" src = {% static "homepage/svgs/brands/ubuntu.svg"%} >
+            </div>
+          </div>
         </nav>
       </div>
     <div class="container-fluid">
@@ -46,5 +54,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src = {% static "homepage/js/animations.js"%}></script>
 </body>
 </html>
